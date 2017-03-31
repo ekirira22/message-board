@@ -1,0 +1,11 @@
+<h2>Answered questions</h2>
+<div >
+  {{#each model as |question|}}
+    <h3>{{question.name}} asked : </h3> <br>
+    {{question.question}} - {{question.content}}
+    <h4><b>Answer</b></h4>
+    <ul>
+      {{question.answer}}
+    </ul>
+  {{/each}}
+</div>
