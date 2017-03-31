@@ -1,0 +1,18 @@
+{
+  "questions": [{
+    "name" : "Oliver Quinn",
+    "question": "Removing and already initialized git folder",
+    "content": "What command do you use when you want to remove an already initialized git folder in a project directory?",
+    "answer" : "Yas"
+    }, {
+    "name" : "Judy Anne",
+    "question": "Creating a new folder using ember-cli",
+    "content": "Im a beginner in ember and i want to know how to create a new ember app",
+    "answer" : "Naah"
+    }, {
+    "name" : "Anne Kamau",
+    "question": "Most informed code questions and answer website",
+    "content": "I have this so many questions in programming that i want answered, which is the best website for this? ",
+    "answer" : "Maybe"
+    }]
+}
