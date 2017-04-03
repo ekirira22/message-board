@@ -16,7 +16,7 @@ export default Ember.Component.extend({
       this.sendAction('saveReview', params);
     },
     hideReview() {
-      this.set('addNewReview', true)
+      this.set('addNewReview', false)
     }
   }
 });

@@ -2,6 +2,16 @@
   <h3>{{question.name}} asked : </h3> <br>
   {{question.query}} - {{question.content}} <br>
 
+  <h2> All Answers</h2>
 
+<ul>
+  {{#each model.reviews as |review|}}
 
-  <button {{action 'delete' question}}>Delete Query</button> 
+    <li>{{review.author}} says - {{review.answer}} <br>
+      The following link could also help you ~ {{review.link}}</li>
+  {{/each}}
+</ul>
+
+<hr>
+      {{new-review saveReview="saveReview"}}
+  <button {{action 'delete' question}}>Delete Query</button><hr><br>

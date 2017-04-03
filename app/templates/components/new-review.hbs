@@ -7,11 +7,11 @@
         {{input value=author id="author"}}
       </div>
       <div class="form-group">
-        <label for="answer">Rating</label>
+        <label for="answer">Answer</label>
         {{input value=answer id="answer"}}
       </div>
       <div class="form-group">
-        <label for="link">Content</label>
+        <label for="link">Helpful link</label>
         {{input value=link id="link"}}
       </div>
       <button {{action 'saveReview'}}>Contribute</button>
@@ -19,5 +19,5 @@
       <button {{action 'hideReview'}}>Hide</button>
   </div>
 {{else}}
-  <button {{action 'reviewFormShow'}}>New Review</button>
+  <button {{action 'reviewFormShow'}}>New Answer</button>
 {{/if}}

@@ -5,15 +5,5 @@
   {{/each}}
   {{query-tile saveQuery2 = "saveQuery3"}}
 
-  <h2> All Answers</h2>
 
-<ul>
-  {{#each model.reviews as |review|}}
-    <li>{{review.author}} says - {{review.answer}} <br>
-      The following link could also help you ~ {{review.link}}</li>
-  {{/each}}
-</ul>
-{{new-review saveReview="saveReview"}}
-
-<hr>
 </div>
