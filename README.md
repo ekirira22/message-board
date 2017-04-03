@@ -1,7 +1,6 @@
 # message-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+MESSAGE BOARD BLOG - Friday Project 2
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/ekirira22/message-board.git>` this repository
 * `cd message-board`
 * `npm install`
 * `bower install`
@@ -41,8 +40,13 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+In order to Delploy this app you gotta make sure that you have no errors on your code
+Run jshint to check for errors, now run the code
 
+###Bugs
+
+The app looks as it supposed to , the add question button works
+But the Contribute new answer form is with a few buds, doesnt work as expected
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
