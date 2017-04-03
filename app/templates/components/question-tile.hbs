@@ -1,1 +1,7 @@
-{{yield}}
+
+  <h3>{{question.name}} asked : </h3> <br>
+  {{question.query}} - {{question.content}} <br>
+
+
+
+  <button {{action 'delete' question}}>Delete Query</button> 

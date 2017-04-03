@@ -1,0 +1,22 @@
+{{#if addQuery}}
+<div class="jumbotron">
+  <form>
+    <div class="form-group">
+      <label for="name">Author of the question</label>
+      {{input value=name id="name"}}
+    </div>
+    <div class="form-group">
+      <label for="query">Put a question snippet</label>
+      {{input value=query id="query"}}
+    </div>
+    <div class="form-group">
+      <label for="content">Content of The Query</label>
+      {{textarea value=content id="content"}}
+    </div>
+    <button {{action 'saveQuery1'}}>Ask Query</button>
+  </form>
+</div> <br>
+<button {{action 'hideQuery'}}> Hide Question Form</button>
+{{else}}
+  <button {{action 'showQuery'}}> Fill Question Form</button>
+{{/if}}

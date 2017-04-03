@@ -1,1 +1,31 @@
-{{outlet}}
+<h1>Contact</h1>
+<h3> Customer Support Center</h3>
+<p>Whether you’re looking for answers, would like to solve a problem, or just want to let us know how we did,
+  you’ll find many ways to contact us right here. </p>
+<p>We’ll help you resolve your issues quickly and easily, getting you back to more important things, like relaxing on your new sofa.</p>
+
+<p>Operating Hours:</p>
+<ul>
+<li>Monday-Saturday: 8:00am – 12:00am (EDT)</li>
+<li>Sunday: 9:00am – 12:00am (EDT)</li>
+</ul>
+
+<p>Please view our FAQ to find answers to your questions or send us an email for general questions! Due to unexpected volumes, </p>
+<p>it is taking us a little longer than we would like to respond to emails. Our current email response time is 3 business days.</p>
+<h3>We appreciate a little feed back</h3>
+<form>
+  <div class="form-group">
+    <label for="inputEmail">Email address</label>
+    <input type="email" class="form-control" id="inputEmail"
+      placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="inputComments">Comments</label>
+    <textarea class="form-control" id="inputComments"
+      placeholder="Comments"></textarea>
+  </div>
+  <button type="submit" class="btn btn-default" {{action 'submitEmail'}}>Submit</button>
+</form>
+<!-- <div class="jumbotron">
+  <span id="confirmations"></span>
+</div> -->
