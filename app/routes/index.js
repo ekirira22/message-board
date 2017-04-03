@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('question')
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      reviews: this.store.findAll('review')
+    });
   },
   actions: {
     saveQuery3(params) {
@@ -12,6 +15,11 @@ export default Ember.Route.extend({
     },
     destroyQuery(question) {
       question.destroyRecord();
+      this.transitionTo('index');
+    },
+    saveReview(params) {
+      var newReview = this.store.createRecord('review', params);
+      newReview.save();
       this.transitionTo('index');
     }
   }

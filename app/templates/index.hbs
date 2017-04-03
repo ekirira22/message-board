@@ -1,8 +1,19 @@
 <h2>Asked questions</h2>
-<div>
-  {{#each model as |question|}}
+<div class="container">
+  {{#each model.questions as |question|}}
       {{question-tile question=question destroyQuery ="destroyQuery"}}
   {{/each}}
   {{query-tile saveQuery2 = "saveQuery3"}}
 
+  <h2> All Answers</h2>
+
+<ul>
+  {{#each model.reviews as |review|}}
+    <li>{{review.author}} says - {{review.answer}} <br>
+      The following link could also help you ~ {{review.link}}</li>
+  {{/each}}
+</ul>
+{{new-review saveReview="saveReview"}}
+
+<hr>
 </div>

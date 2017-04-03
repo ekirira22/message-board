@@ -11,5 +11,14 @@
     "name" : "Anne Kamau",
     "query": "Most informed code questions and answer website",
     "content": "I have this so many questions in programming that i want answered, which is the best website for this? "
-    }]
+    }],
+    "reviews" : [{
+      "author" : "Will i am",
+      "answer" : "Run the command $rm -rf .git it will do",
+      "link" : "https://help.github.com/articles/removing-a-remote/"
+      },{
+        "author" : "Katty Perry",
+        "answer" : "Run the command $ember new app-name it will do",
+        "link" : "https://guides.emberjs.com/v2.12.0/"
+      }]
 }
