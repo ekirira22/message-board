@@ -16,16 +16,23 @@
 <form>
   <div class="form-group">
     <label for="inputEmail">Email address</label>
-    <input type="email" class="form-control" id="inputEmail"
-      placeholder="Email">
+    {{input value=email id="email" placeholder="Email" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="inputComments">Comments</label>
-    <textarea class="form-control" id="inputComments"
-      placeholder="Comments"></textarea>
+    {{textarea value=comments id="inputComments" placeholder="Comments" class="form-control"}}
   </div>
-  <button type="submit" class="btn btn-default" {{action 'submitEmail'}}>Submit</button>
+
+  {{#bs-modal-simple open=modal1 title="Congratulations!!" size="sm" onHidden=(action (mut modal1) false)}}
+    Thankyou <a mailto={{email}}>{{email}}</a> has succesfully been added to our email-listings
+    We'll update you with our recent hot news and queries
+  {{/bs-modal-simple}}
+  {{#bs-button onClick=(action (mut modal1) true) class="btn btn-default btn-danger"}}Submit{{/bs-button}}
+
+<!-- This triggers a modal which displays the users email and with it info of what will be done to the email -->
+
+
+  <!-- <button type="submit" class="btn btn-default btn-danger"  {{action 'pressed'}}>Submit</button> -->
 </form>
-<!-- <div class="jumbotron">
-  <span id="confirmations"></span>
-</div> -->
+
+<hr>
