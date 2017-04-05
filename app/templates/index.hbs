@@ -1,9 +1,8 @@
 <h2>Asked questions</h2>
 <div class="container">
   {{#each model.questions as |question|}}
-      {{question-tile question=question destroyQuery ="destroyQuery"}}
+      {{question-tile question=question destroyQuery="destroyQuery" saveReview="saveReview"}}
   {{/each}}
+
   {{query-tile saveQuery2 = "saveQuery3"}}
-
-
 </div>

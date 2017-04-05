@@ -1,17 +1,17 @@
 
   <h3>{{question.name}} asked : </h3> <br>
-  {{question.query}} - {{question.content}} <br>
+  <b>{{question.query}}</b> - {{question.content}} <br>
 
-  <h2> All Answers</h2>
+  <h3>Answers :</h3>
 
 <ul>
-  {{#each model.reviews as |review|}}
+  {{#each question.reviews as |review|}}
 
     <li>{{review.author}} says - {{review.answer}} <br>
-      The following link could also help you ~ {{review.link}}</li>
+      The following link could also help you ~ <a href= {{review.link}} target="_blank"> {{review.link}} </a> </li>
   {{/each}}
 </ul>
 
 <hr>
-      {{new-review saveReview="saveReview"}}
+      {{new-review saveReview="saveReview" question=question}} <br>
   <button {{action 'delete' question}}>Delete Query</button><hr><br>

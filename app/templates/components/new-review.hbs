@@ -14,10 +14,10 @@
         <label for="link">Helpful link</label>
         {{input value=link id="link"}}
       </div>
-      <button {{action 'saveReview'}}>Contribute</button>
-    </form>
+      <button {{action 'saveReview' }}>Contribute</button>
+    </form> <br>
       <button {{action 'hideReview'}}>Hide</button>
   </div>
-{{else}}
+{{else}} <br>
   <button {{action 'reviewFormShow'}}>New Answer</button>
 {{/if}}

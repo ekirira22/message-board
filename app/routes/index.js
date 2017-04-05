@@ -19,7 +19,11 @@ export default Ember.Route.extend({
     },
     saveReview(params) {
       var newReview = this.store.createRecord('review', params);
-      newReview.save();
+      var question = params.question;
+      question.get('reviews').addObject(newReview);
+      newReview.save().then(function() {
+        return question.save();
+      });
       this.transitionTo('index');
     }
   }

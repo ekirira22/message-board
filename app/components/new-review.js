@@ -10,7 +10,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         answer: this.get('answer'),
-        link: this.get('link')
+        link: this.get('link'),
+        question: this.get('question')
       };
       this.set('addNewReview', false);
       this.sendAction('saveReview', params);
